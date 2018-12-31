@@ -1,0 +1,311 @@
+@media only screen and (min-width: 940px) {
+  header {
+    display: none;
+  }
+
+#hello {
+	position: absolute;
+	top: 15%;
+	width: 30%;
+	height: 20px;
+	padding-bottom: 0;
+	z-index: 3;
+	padding-left: 20px;
+	margin-bottom: 0;
+  display: block;
+}
+
+
+#text-hello {
+	color: #009a35;
+	font-size: 2em;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.container {
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+#dropdown {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  transition: 0.5s ease;
+	opacity: 1;
+	overflow: hidden;
+  top: 105px;
+  left: 0;
+  transform: translateY(-100%);
+  color: orange;
+  margin-bottom: 0px;
+}
+
+ .content{
+    position: relative;    
+    transition: margin 0.3s ease;
+    min-height: 50px;
+    margin-top: 10px;
+    padding-bottom: 0;
+    text-align: left;
+    width: 100%;
+    background-color: white;
+  }
+
+.pushed .content {
+   margin-top: 60px;
+}
+
+.button {
+  text-align: center;
+  display: inline;
+  color: green;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  width: 10%;
+  z-index: 3;
+  transition: 0.7s ease;
+}
+
+.button:hover {
+  opacity: 0.4;
+  transform: rotate(-90deg);
+}
+
+.clicked {
+   transform: rotate(-90deg);
+}
+
+.navBar {
+  padding: 0;
+}
+
+.left {
+  left: 2%;
+  width: 30%;
+  height: 100%;
+  padding-right: 2px;
+  background-color: white;
+  z-index: 2;
+}
+
+.right {
+  right: 0;
+  width: 70%;
+  font-family: 'Didact Gothic', sans-serif;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.hello-world {
+  font-size: 7em;
+  color: #009a35;
+}
+
+}
+
+@media (max-width: 939px){
+
+header {
+    position: absolute;
+    height: 40px;
+    left: 60%;
+    z-index: 2;
+  }
+
+#headerBar {
+  font-family: 'Didact Gothic', sans-serif;
+  height: 100px;
+  z-index: 3;
+}
+
+.navBar {
+  padding: 0;
+  position: absolute;
+  top: 20%;
+}
+
+.left {
+  left: 2%;
+  width: 20%;
+  height: 100%;
+  padding-right: 2px;
+  background-color: white;
+  z-index: 2;
+}
+
+.right {
+  margin-top: 5%;
+  right: 10%;
+  width: 70%;
+  font-family: 'Didact Gothic', sans-serif;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.hello-world {
+  font-size: 5em;
+  color: #009a35;
+}
+
+  #hello {
+    display: none;
+}
+
+
+#text-hello {
+   display: none;
+}
+
+.container {
+  display: none;
+}
+
+#dropdown {
+  display: none;
+}
+
+#headerText {
+  display: none;
+}
+
+ .content{
+    display: none;
+  }
+
+.pushed .content {
+  display: none;
+}
+
+.button{
+ display: none;
+}
+}
+
+a {
+  color: orange;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #006A24;
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 5%;
+}
+
+
+.panel {
+  position: relative;
+  left: 0;
+  top: 10%;
+
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.image {
+  width: 75%;
+  position: relative;
+  transform: translate(20%, 0);
+  transition: 2s ease;
+}
+
+.text {
+  color: #006A24;
+  width: 60%;
+  position: relative;
+  transform: translate(25%, 0);
+  transition: 2s ease;
+  text-align: left;
+  font-size: 1.2em;
+  border-bottom: 1px solid #009a35;
+  border-top: 1px solid #009a35;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Times New Roman'
+}
+
+
+
+.slide {
+  transition: 2s ease;
+  opacity: 0;
+  list-style: none;
+  float: left;
+  position: absolute;
+  overflow-y: auto;
+  width: 100%;
+  top: 30%;
+  
+}
+
+.display {
+  opacity: 1;
+  transition: 2s ease;
+  overflow-y: auto;
+  float: left;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+}
+
+.nav {
+  list-style-type: none;
+  color: green;
+  font-size: 1.2em;  
+  opacity: 0.8;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  width: 100%;
+  transition: 0.8s ease;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 2px;
+  padding-right: -2px;
+  cursor: pointer; 
+}
+
+.nav:hover {
+  background-color: pink;
+  color: white;
+  opacity: 0.9;
+}
+
+
+.swipe {
+  transform: translate(-200%, -50%);
+}
+
+.barStyle {
+  background-color: pink;
+  color: white;
+}
+
+.list {
+  list-style: none;
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+}
